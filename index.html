@@ -82,6 +82,18 @@
           The cool part is that instead of just predicting a single number, the model learns to output the full probability distribution. This means it can capture complex or even multi-modal shapes in the data, reflecting the true range of possible outcomes.
         </p>
       </div>
+      <div class="paper">
+        <h3>RL4E: Reinforcement Learning for Efficiency</h3>
+        <img
+          src="SplitReason.png"
+          alt="SplitReason graphic"
+          class="paper-art"
+        />
+        <p>
+          We teach a small model when to 'call' a larger language model for decode on hard reasoning tasks. This is just a demo, but the broader goal is to 'teach models' to make themselves more efficient, by deciding when to use local attention, quantization, sparsity based on what they are thinking about. 
+          SplitReason uses a special token to call a larger model, in the same way, we can get creative and make more special tokens, such that the model can control its own generation.
+        </p>
+      </div>
 
       <div class="paper">
         <h3>Mapping Neurons to Hardware</h3>
@@ -96,18 +108,6 @@
         </p>
       </div>
 
-      <div class="paper">
-        <h3>RL4E: Reinforcement Learning for Efficiency</h3>
-        <img
-          src="SplitReason.png"
-          alt="SplitReason graphic"
-          class="paper-art"
-        />
-        <p>
-          We teach a small model when to 'call' a larger language model for decode on hard reasoning tasks. This is just a demo, but the broader goal is to 'teach models' to make themselves more efficient, by deciding when to use local attention, quantization, sparsity based on what they are thinking about. 
-          SplitReason uses a special token to call a larger model, in the same way, we can get creative and make more special tokens, such that the model can control its own generation.
-        </p>
-      </div>
     </section>
   </body>
 </html>
