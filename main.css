@@ -64,26 +64,25 @@ a:hover {
   max-width: 900px;
   line-height: 1.6em;
 }
-
 .paper {
-  display: flex;
-  flex-direction: column;      /* stack everything */
-  text-align: left;            /* headings flush-left again */
+  margin-bottom: 3rem;          /* space between cards */
+  line-height: 1.6em;
 }
 
-.paper h3   { order: 0; margin-bottom: 0.75rem; }
-.paper-art  { order: 1; width: 100%; height: auto; margin: 0.5rem 0; }
-.paper p    { order: 2; margin-top: 0; }
+.paper h3 {                     /* title */
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+}
 
-.paper-art {
-  width: 100%;
-  height: auto;
+.paper-art {                    /* image */
+  display: block;               /* kicks onto its own line */
+  width: 100%;                  /* fill card width */
+  height: auto;                 /* keep aspect ratio */
+  margin: 0 0 1rem 0;           /* space above paragraph */
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Stack on phones */
-@media (max-width: 768px) {
-  .paper { grid-template-columns: 1fr; text-align: center; }
-  .paper-art { max-width: 320px; margin: 0 auto 1rem; }
+.paper p {                      /* caption */
+  margin: 0;
 }
