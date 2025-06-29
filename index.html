@@ -68,12 +68,12 @@
     </section>
     <!-- ───────────────────── Research Section ───────────────────── -->
     <section id="research">
-      <h2>Research Highlights</h2>
+      <h2>Research Directions</h2>
 
       <div class="paper">
-         <h3>Transformers for Regressing on Google Compute Clusters</h3>
+         <h3>Universal Regression</h3>
         <img
-          src="GraphedAnimation.gif"
+          src="teaser_rlm.fig.gif"
           alt="Performance Prediction for Large Systems graphic"
           class="paper-art"
         />
@@ -84,7 +84,7 @@
       </div>
 
       <div class="paper">
-        <h3>LogicNets: Mapping Neurons To Hardware</h3>
+        <h3>Mapping Neurons to Hardware</h3>
         <img
           src="LogicNets.png"
           alt="LogicNet graphic"
@@ -93,6 +93,19 @@
         <p>
           By collapsing each neuron into a tiny, hand-tuned bundle of logic gates, LogicNets turns an entire deep network into native FPGA fabric—no CPUs, no firmware loops. 
           The whole jet-tagging model streams through in under 15 ns, sustaining hundreds of millions of inferences per second, so the ATLAS or CMS Level-1 trigger can make physics decisions in real time and still have head-room for everything else on the board.
+        </p>
+      </div>
+
+      <div class="paper">
+        <h3>RL4E: Reinforcement Learning for Efficiency</h3>
+        <img
+          src="SplitReason.png"
+          alt="SplitReason graphic"
+          class="paper-art"
+        />
+        <p>
+          We teach a small model when to 'call' a larger language model for decode on hard reasoning tasks. This is just a demo, but the broader goal is to 'teach models' to make themselves more efficient, by deciding when to use local attention, quantization, sparsity based on what they are thinking about. 
+          SplitReason uses a special token to call a larger model, in the same way, we can get creative and make more special tokens, such that the model can control its own generation.
         </p>
       </div>
     </section>
