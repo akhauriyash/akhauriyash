@@ -65,14 +65,15 @@ a:hover {
   line-height: 1.6em;
 }
 
-/* Each paper = image + text grid */
 .paper {
-  display: grid;
-  grid-template-columns: minmax(0, 260px) 1fr;
-  gap: 1.75rem;
-  align-items: center;
-  margin-bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;      /* stack everything */
+  text-align: left;            /* headings flush-left again */
 }
+
+.paper h3   { order: 0; margin-bottom: 0.75rem; }
+.paper-art  { order: 1; width: 100%; height: auto; margin: 0.5rem 0; }
+.paper p    { order: 2; margin-top: 0; }
 
 .paper-art {
   width: 100%;
